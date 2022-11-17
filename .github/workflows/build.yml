@@ -14,7 +14,7 @@ jobs:
       - name: executing remote ssh commands using ssh key
         uses: appleboy/ssh-action@master
         with:
-          host: 44.206.238.170
+          host: 54.242.18.107
           username: ubuntu
           key: ${{ secrets.PRIVATEKEY }}
           port: 22
