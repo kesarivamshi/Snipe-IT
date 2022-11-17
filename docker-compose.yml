@@ -24,6 +24,7 @@ services:
     image: mariadb:10.6.4-focal
     volumes:
     - db:/var/lib/mysql
+    - ./databackup:/docker-entrypoint-initdb.d
     env_file:
     - .env.docker
     networks:
