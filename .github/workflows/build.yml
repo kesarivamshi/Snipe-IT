@@ -22,4 +22,6 @@ jobs:
             whoami
             cd /var/www/snipe-it
             pwd
-            git pull origin main
+            git clone https://github.com/kesarivamshi/Snipe-IT.git
+            cd Snipe-IT
+            docker-compose -up -d
