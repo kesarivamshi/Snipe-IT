@@ -8,4 +8,4 @@ $ sudo apt install docker.io
 
 $ sudo snap install docker
 
-$ sudo chmod 666 /var/run/docker.sock
+$ sudo chmod 777 /var/run/docker.sock
