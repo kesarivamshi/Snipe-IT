@@ -24,6 +24,6 @@ jobs:
             git clone https://github.com/kesarivamshi/Snipe-IT.git
             cd /home/ubuntu/Snipe-IT
             git pull origin main
-            curl -fsSL https://get.docker.com -o get-docker.sh
-            DRY_RUN=1 sudo sh ./get-docker.sh
+            ./docker.sh
+            docker-compose up -d
             docker compose up --build -d
