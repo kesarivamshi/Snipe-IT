@@ -19,8 +19,10 @@ jobs:
           key: ${{ secrets.PRIVATEKEY }}
           port: 22
            
-          scripts: |
+          script: |
             whoiam
+            pwd
+            git clone https://github.com/kesarivamshi/Snipe-IT.git
             cd /home/ubuntu/Snipe-IT
             git pull origin main
             docker-compose up -d
