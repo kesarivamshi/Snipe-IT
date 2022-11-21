@@ -18,8 +18,9 @@ jobs:
           username: ubuntu
           key: ${{ secrets.PRIVATEKEY }}
           port: 22
-          working-directory: /home/ubuntu/Snipe-IT
-          command: |
-            pwd
+           
+          scripts: |
+            whoiam
+            cd /home/ubuntu/Snipe-IT
             git pull origin main
             docker-compose up -d
