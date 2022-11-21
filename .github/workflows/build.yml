@@ -1,6 +1,6 @@
 name: snipeit
 
-on:
+on: 
   push:
     branches: master
   
