@@ -2,7 +2,7 @@ name: snipeit
 
 on:
   push:
-    branches: main
+    branches: master
   
 jobs:
   deploy:
@@ -14,14 +14,11 @@ jobs:
       - name: executing remote ssh commands using ssh key
         uses: appleboy/ssh-action@master
         with:
-          host: 54.242.18.107
+          host: 52.202.213.52
           username: ubuntu
           key: ${{ secrets.PRIVATEKEY }}
           port: 22
-          script: |
-            whoami
-            cd /var/www/snipe-it
-            pwd
-            git clone https://github.com/kesarivamshi/Snipe-IT.git
-            cd Snipe-IT
-            docker-compose -up -d
+          working-directory: /home/ubuntu/Snipe-IT
+          command: |
+            git pull origin main
+            docker-compose up -d
