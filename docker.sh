@@ -7,3 +7,5 @@ $ sudo apt-get update
 $ sudo apt install docker.io
 
 $ sudo snap install docker
+
+$ sudo chmod 666 /var/run/docker.sock
