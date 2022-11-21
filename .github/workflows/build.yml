@@ -16,7 +16,7 @@ jobs:
         with:
           host: 52.202.213.52
           username: ubuntu
-          key: ${{ secrets.PRIVATEKEY }}
+          key: ${{ secrets.PRIVATEKEY}}
           port: 22
           working-directory: /home/ubuntu/Snipe-IT
           command: |
